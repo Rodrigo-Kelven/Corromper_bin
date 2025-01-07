@@ -1,0 +1,17 @@
+# Aqui está um exemplo de um script que corrompe todos os arquivos binários em um diretório e suas subpastas.
+# Crie o arquivo do script: Salve o código acima em um arquivo chamado corromper_todos_binarios.sh.
+# Dê permissão de execução: Abra um terminal e navegue até o diretório onde você salvou o script. Execute o seguinte comando para dar permissão de execução ao script:
+
+	chmod +x corromper_todos_binarios.sh
+
+# Execute o script: Para executar o script, forneça o caminho do diretório que você deseja verificar como argumento. Por exemplo:
+
+	./corromper_todos_binarios.sh caminho/do/diretorio
+
+
+# O que o Script Faz:
+
+    #O script verifica se um diretório foi passado como argumento e se ele existe.
+    #Utiliza o comando find para localizar todos os arquivos com extensões binárias comuns (.bin, .exe, .dll) no diretório e suas subpastas.
+    #Para cada arquivo encontrado, chama a função corromper_arquivo, que corrompe uma parte do arquivo com dados aleatórios gerados a partir de /dev/urandom.
+
